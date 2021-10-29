@@ -1,0 +1,29 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkboxes-container {
+  width: 100%;
+  max-width: 150px;
+  padding: 40px;
+}
+
+.check-item {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.check-item, label {
+  cursor: pointer;
+}
+
+.check-item label {
+  padding-left: 10px;
+}
+
+.check-item-1 {
+  margin-bottom: 17px;
+}
