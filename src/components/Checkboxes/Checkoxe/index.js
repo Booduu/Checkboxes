@@ -25,7 +25,6 @@ Checkboxe.defaultProps = {
     classes: '',
 }
 
-
 Checkboxe.propTypes = {
     label: PropTypes.string,
     classes: PropTypes.string,
@@ -34,5 +33,4 @@ Checkboxe.propTypes = {
     handleChange: PropTypes.func,
 }
 
- 
 export default Checkboxe;
