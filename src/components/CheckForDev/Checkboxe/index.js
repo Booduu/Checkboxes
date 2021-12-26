@@ -1,3 +1,4 @@
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -8,11 +9,21 @@ const Checkboxe = React.memo(({
     id,
     classes
 }) => {
-    console.log(id);
+    
+    console.log('id : ' + id);
+    
     return (  
         <div className={classes} >
-          <input type="checkbox" id={id} name={id} checked={checked} onChange={handleChange}/>
-          <label htmlFor={id}>{label}</label>
+          <input 
+            type="checkbox" 
+            id={id} 
+            name={id} 
+            checked={checked} 
+            onChange={handleChange}
+        />
+          <label htmlFor={id}>
+              {label}
+          </label>
         </div>
     );
 })
@@ -23,6 +34,7 @@ Checkboxe.defaultProps = {
     checked: true,
     handleChange: () => {},
     classes: '',
+    array: [],
 }
 
 Checkboxe.propTypes = {
@@ -31,6 +43,8 @@ Checkboxe.propTypes = {
     id: PropTypes.string,
     checked: PropTypes.bool,
     handleChange: PropTypes.func,
+    array: PropTypes.array,
+
 }
 
 export default Checkboxe;
